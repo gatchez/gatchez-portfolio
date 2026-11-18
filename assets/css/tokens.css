@@ -1,0 +1,57 @@
+:root {
+    /* Brand colors */
+    --color-background: #0b1017;
+    --color-surface: #151E29;
+    --color-border: #263442;
+
+    --color-text-primary: #E8EDF3;
+    --color-text-secondary: #9AA8B7;
+
+    --color-accent: #61CDF3;
+    --color-accent-hover: #8ADCE8;
+
+    /* Typography */
+    --font-family: Arial, Helvetica, sans-serif;
+    --font-mono: 'Cascadia Code', Consolas, monospace;
+
+    /* Font sizes */
+    --text-xs: 0.75rem; /* 12px */
+    --text-sm: 0.875rem; /* 14px */
+    --text-base: 1rem; /* 16px */
+    --text-lg: 1.125rem; /* 18px */
+    --text-xl: 1.25rem; /* 20px */
+    --text-2xl: 1.5rem; /* 24px */
+    --text-3xl: 2rem; /* 32px */
+    --text-4xl: 2.75rem; /* 44px */
+    --text-hero: clamp(2.75rem, 6vw, 4.75rem); /* Responsive hero text size */
+
+    /* Spacing */
+    --space-1: 0.25rem; /* 4px */
+    --space-2: 0.5rem; /* 8px */
+    --space-3: 0.75rem; /* 12px */
+    --space-4: 1rem; /* 16px */
+    --space-5: 1.5rem; /* 24px */
+    --space-6: 2rem; /* 32px */
+    --space-7: 3rem; /* 48px */
+    --space-8: 4rem; /* 64px */
+    --space-9: 5rem; /* 80px */
+    --space-10: 7rem; /* 112px */
+
+    /* Layout */
+    --container-width: 1200px;
+    --container-gutter: clamp(1.25rem, 4vw, 2rem); /* Responsive gutter size */
+
+    /* Borders and surfaces */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+
+    --border-width: 1px;
+
+    /* Transitions */
+    --transition-fast: 180ms ease; /* Fast transition for hover effects */
+    --transition-normal: 250ms ease; /* Normal transition for general animations */
+
+    /* Layering */
+    --z-header: 100;
+}

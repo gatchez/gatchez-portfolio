@@ -1,0 +1,77 @@
+/* Base reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem; /* Adjust based on header height */
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    color: var(--color-background);
+    font-family: var(--font-primary);
+    font-size: var(--text-base);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Media defaults */
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+/* Links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
+
+/* Selection */
+::selection {
+    background: var(--color-accent);
+    color: var(--color-background);
+}
+
+/* Keyboard accessibility */
+:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
