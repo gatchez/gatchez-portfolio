@@ -7,7 +7,7 @@
 }
 
 .section {
-    padding-block: var(--space-10);
+    padding-block: 4rem;
 }
 
 .section-heading {
